@@ -700,6 +700,7 @@ cc_library_static {
         },
         arm64: {
             srcs: [
+                "upstream-openbsd/lib/libc/string/memchr.c",
                 "upstream-openbsd/lib/libc/string/memrchr.c",
                 "upstream-openbsd/lib/libc/string/strcat.c",
                 "upstream-openbsd/lib/libc/string/stpncpy.c",
@@ -919,6 +920,7 @@ cc_library_static {
 
                 "arch-arm/cortex-a55/bionic/memcpy.S",
 
+                "arch-arm/generic/bionic/memchr.S",
                 "arch-arm/generic/bionic/memcmp.S",
                 "arch-arm/generic/bionic/memmove.S",
                 "arch-arm/generic/bionic/memset.S",
